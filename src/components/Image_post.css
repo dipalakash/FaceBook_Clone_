@@ -1,0 +1,87 @@
+/* ImagePosts.css */
+
+/* Container for the Image Posts page */
+.image-posts-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-posts-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Loading & No Posts Message */
+.image-posts-container .loading,
+.image-posts-container .no-posts {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Grid layout for image posts */
+.image-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Each image post card */
+.image-post-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect to image cards */
+.image-post-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image inside the card */
+.image-post-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect on the image */
+.image-post-card:hover .image-post-img {
+  opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .image-posts-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .image-posts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .image-posts-container {
+    padding: 10px;
+  }
+
+  .image-posts-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .image-post-img {
+    object-position: center;
+  }
+}

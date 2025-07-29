@@ -1,0 +1,84 @@
+.home-layout {
+  display: flex;
+  background-color: #f0f2f5;
+  /* padding: 20px; */
+  gap: 30px;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  min-width: 25%;
+  /* width: 260px; */
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 80px;
+}
+
+.left-profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.left-profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.view-btn {
+  background-color: #1877f2;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.left-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.left-menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.left-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* FEED PANEL */
+.main-feed {
+  flex: 1;
+  width:100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loading,
+.no-posts,
+.error-message {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #65676b;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
